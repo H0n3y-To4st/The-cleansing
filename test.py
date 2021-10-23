@@ -211,13 +211,6 @@ if __name__ == "__main__":
     pygame.image.load(PIPE).convert_alpha()
     )
 
-    # Game sounds
-    GAME_SOUNDS['die'] = pygame.mixer.Sound('gallery/audio/die.wav')
-    GAME_SOUNDS['hit'] = pygame.mixer.Sound('gallery/audio/hit.wav')
-    GAME_SOUNDS['point'] = pygame.mixer.Sound('gallery/audio/point.wav')
-    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('gallery/audio/swoosh.wav')
-    GAME_SOUNDS['wing'] = pygame.mixer.Sound('gallery/audio/wing.wav')
-
     GAME_SPRITES['background'] = pygame.image.load(BACKGROUND).convert()
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
 
