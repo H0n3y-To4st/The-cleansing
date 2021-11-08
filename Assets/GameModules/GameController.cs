@@ -125,7 +125,12 @@ public class GameController : MonoBehaviour
     }
 
     public void DrinkWater(){
-        if(PlayerHealth >= 75) return; 
+        if(PlayerHealth >= 75) {
+        BagPanel.SetActive(false);
+        AttackButton.interactable = true;
+        BagButton.interactable = true;
+        
+        else {
         PlayerHealth += 25;
         BagPanel.SetActive(false);
         ChangeTurn();
